@@ -1,0 +1,14 @@
+<li>
+    <p>Name: {{cars.name_car}}</p>
+    <p><img src="{{ car.image.urls }}"></p>
+    <p>Category: {{cars.category}}</p>
+    <p>Marka: {{cars.marka}}</p>
+    <p>Model: {{cars.model}}</p>
+    <p>Price: {{cars.price}}</p>
+    <p>Description: {{cars.description}}</p>
+    <p>Year: {{cars.year}}</p>
+    <p>Created Date: {{cars.date}}</p>
+
+</li>
+    <button><a href="{% url 'car_update' cars.pk %}">Update</a></button>
+    <button><a href="{% url 'car_delete' cars.pk %}">Delete</a></button>
